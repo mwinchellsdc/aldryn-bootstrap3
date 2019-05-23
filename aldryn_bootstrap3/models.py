@@ -1150,7 +1150,7 @@ class Bootstrap3CarouselSlideFolderPlugin(CMSPlugin):
     http://getbootstrap.com/javascript/#carousel
     """
     folder = filer.fields.folder.FilerFolderField(
-        verbose_name=_('Folder'),
+        verbose_name=_('Folder'), on_delete=models.CASCADE,
     )
     classes = model_fields.Classes()
 
